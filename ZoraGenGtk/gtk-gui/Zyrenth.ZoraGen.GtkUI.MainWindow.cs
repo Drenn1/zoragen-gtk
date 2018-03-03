@@ -195,7 +195,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.vbox1 = new global::Gtk.VBox();
 			this.vbox1.Name = "vbox1";
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString("<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><separator/><menuitem name='importBatteryAction' action='importBatteryAction'/><separator/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/><menuitem name='CheckForUpdatesAction' action='CheckForUpdatesAction'/></menu></menubar></ui>");
+			this.UIManager.AddUiFromString(@"<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><separator/><menuitem name='importBatteryAction' action='importBatteryAction'/><separator/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/><menuitem name='CheckForUpdatesAction' action='CheckForUpdatesAction'/></menu></menubar></ui>");
 			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget("/menubar1")));
 			this.menubar1.Name = "menubar1";
 			this.vbox1.Add(this.menubar1);
@@ -298,7 +298,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.chkHeros = new global::Gtk.CheckButton();
 			this.chkHeros.CanFocus = true;
 			this.chkHeros.Name = "chkHeros";
-			this.chkHeros.Label = global::Mono.Unix.Catalog.GetString("Hero's Quest");
+			this.chkHeros.Label = global::Mono.Unix.Catalog.GetString("Hero\'s Quest");
 			this.chkHeros.DrawIndicator = true;
 			this.chkHeros.UseUnderline = true;
 			this.table2.Add(this.chkHeros);
@@ -482,11 +482,14 @@ namespace Zyrenth.ZoraGen.GtkUI
 			w28.XOptions = ((global::Gtk.AttachOptions)(4));
 			w28.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
-			this.spinBehavior = new global::Gtk.SpinButton(0, 63, 1);
+			this.spinBehavior = new global::Gtk.SpinButton(0D, 63D, 1D);
+			this.spinBehavior.TooltipMarkup = "0: Still a baby\n1-5: Curious\n6-10: Shy\n11+: Hyperactive\n\nThe exact value of this," +
+				" combined with your answers to their questions later, will determine his occupat" +
+				"ion.";
 			this.spinBehavior.CanFocus = true;
 			this.spinBehavior.Name = "spinBehavior";
-			this.spinBehavior.Adjustment.PageIncrement = 10;
-			this.spinBehavior.ClimbRate = 1;
+			this.spinBehavior.Adjustment.PageIncrement = 10D;
+			this.spinBehavior.ClimbRate = 1D;
 			this.spinBehavior.Numeric = true;
 			this.table3.Add(this.spinBehavior);
 			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table3[this.spinBehavior]));
@@ -497,11 +500,11 @@ namespace Zyrenth.ZoraGen.GtkUI
 			w29.XOptions = ((global::Gtk.AttachOptions)(4));
 			w29.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
-			this.spinID = new global::Gtk.SpinButton(0, 32767, 1);
+			this.spinID = new global::Gtk.SpinButton(0D, 32767D, 1D);
 			this.spinID.CanFocus = true;
 			this.spinID.Name = "spinID";
-			this.spinID.Adjustment.PageIncrement = 10;
-			this.spinID.ClimbRate = 1;
+			this.spinID.Adjustment.PageIncrement = 10D;
+			this.spinID.ClimbRate = 1D;
 			this.spinID.Numeric = true;
 			this.table3.Add(this.spinID);
 			global::Gtk.Table.TableChild w30 = ((global::Gtk.Table.TableChild)(this.table3[this.spinID]));

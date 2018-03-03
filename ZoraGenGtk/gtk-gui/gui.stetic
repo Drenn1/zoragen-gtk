@@ -644,6 +644,12 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.SpinButton" id="spinBehavior">
                         <property name="MemberName" />
+                        <property name="Tooltip" translatable="yes">0: Still a baby
+1-5: Curious
+6-10: Shy
+11+: Hyperactive
+
+The exact value of this, combined with your answers to their questions later, will determine his occupation.</property>
                         <property name="CanFocus">True</property>
                         <property name="Upper">63</property>
                         <property name="PageIncrement">10</property>
